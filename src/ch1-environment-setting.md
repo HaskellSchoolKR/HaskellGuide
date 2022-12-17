@@ -6,6 +6,7 @@
 
 ### GHCup
 GHCup은 비교적 최근에 개발된 하스켈 설치도구로, 이를 통해 GHC, cabal-install, Stack, HLS를 설치할 수 있습니다.
+아래의 내용은 GHCup 공식 홈페이지에서도 볼 수 있습니다. <https://www.haskell.org/ghcup/>
 
 Linux, macOS, FreeBSD, WSL2 등에서 GHCup을 설치하려면 다음 명령을 일반 사용자로 실행하세요
 ```sh
@@ -16,8 +17,6 @@ Windows 환경에서 GHCup을 설치하려면 PowerShell에서 다음 명령을 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -ArgumentList $true } catch { Write-Error $_ }
 ```
-
-자세한 내용은 GHCup 홈페이지를 참고하세요 : <https://www.haskell.org/ghcup/>
 
 ### Nix
 NixOS에선 GHCup을 사용할 수 없으며, 대신 nix를 사용해 하스켈 개발환경을 구성할 수 있습니다.
