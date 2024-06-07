@@ -7,6 +7,7 @@
 * 본 교재만으로 하스켈을 배울 수 있게끔 완결된 내용을 담을 것
 * 최신 하스켈 커뮤니티의 동향을 반영할 것
 
-# 다른 교재
+# 기타 자료
+* https://www.haskell.org/onlinereport/syntax-iso.html
 * https://www.cis.upenn.edu/~cis1940/spring13/lectures.html
 * https://en.wikibooks.org/wiki/Haskell
