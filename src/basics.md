@@ -75,11 +75,11 @@ Hello, World!
 GHC는 네이티브 컴파일러이지만 인터프리터 모드로 실행할 수도 있습니다. `ghci`를 입력해 GHCi를 실행해 보세요.
 ```
 $ ghci
-GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+GHCi, version x.y.z: https://www.haskell.org/ghc/  :? for help
 ghci> 
 ```
 
-GHCi의 REPL(readl-eval-print-loop)에서 아래와 같이 간단히 코드를 실행해볼 수 있습니다.
+GHCi에서 아래와 같이 간단히 코드를 실행해볼 수 있습니다.
 ```
 ghci> main = putStrLn "Hello, World"
 ghci> main
@@ -91,8 +91,8 @@ ghci> x^2
 
 파일에 저장된 내용을 GHCi로 읽어오고 싶을 때에는 `:load`(단축형 `:l`)를 사용합니다.
 ```
-ghci> :l Main.hs
-[1 of 1] Compiling Main             ( Main.hs, interpreted )
+ghci> :load Main
+Compiling Main             ( Main.hs, interpreted )
 Ok, one module loaded.
 ghci> main
 Hello, World
@@ -100,8 +100,8 @@ Hello, World
 
 로딩 되어있는 파일의 수정사항을 반영하고 싶을 때에는 `:reload`(단축형 `:r`)를 사용할 수 있습니다.
 ```
-ghci> :r
-[1 of 1] Compiling Main             ( Main.hs, interpreted )
+ghci> :reload
+Compiling Main             ( Main.hs, interpreted ) [Source file changed]
 Ok, one module loaded.
 ```
 
